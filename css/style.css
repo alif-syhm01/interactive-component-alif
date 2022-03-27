@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color:  #121417;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.card {
+    /* background color gradient setting */
+    background-image: linear-gradient(to bottom, hsl(213, 19%, 18%), hsl(210, 26%, 11%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow:  200px 398px -133px rgba(255,255,255,0.65) inset;
+    /* box-shadow: 1px 1px 1px #fff; */
+ 
+    padding: 2rem;
+    max-width: 25rem;
+    border-radius: 21px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.rated-card {
+    padding: 3rem 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-star {
+    background-color: #2f3741;
+    padding: 0.9rem;
+    border-radius: 50%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.rated {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rated-selected {
+    font-size: 1rem;
+    opacity: 0.9;
+    padding: 0.4rem 1.2rem;
+    margin-bottom: 1.5rem;
+    background-color: #2f3741;
+    color: #fb7413;
+    border-radius: 25px;
+}
+
+.body-header {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.body-text {
+    font-size: 0.9375rem;
+    color: #959eac;
+    line-height: 1.5;
+}
+
+.ratings {
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #2f3741;
+    color: #959eac;
+    cursor: pointer;
+}
+
+.rating:hover,
+.rating:active {
+    background-color: #fb7413;
+    color: #fff;
+}
+
+.rating:link,
+.rating:visited {
+    background-color: #959eac;
+}
+
+.rating.active {
+    background-color: #959eac;
+    color: #fff;
+    cursor: default;
+}
+
+.submit {
+    margin-top: 1rem;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fb7413;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0.7rem;
+    letter-spacing: 0.125rem;
+    border-radius: 21px;
+}
+
+.submit:hover,
+.submit:active {
+    background-color: #fff;
+    color: #fb7413;
+}
+
+@media (max-width: 31.25em) {
+    .card {
+        margin: 0 2rem;
+    }
+}
